@@ -1,0 +1,365 @@
+types:
+
+  # GRID SYSTEM
+  grid: &GRID
+    col-xs-1: Horizontal at all times
+    col-xs-2: Horizontal at all times
+    col-xs-3: Horizontal at all times
+    col-xs-4: Horizontal at all times
+    col-xs-5: Horizontal at all times
+    col-xs-6: Horizontal at all times
+    col-xs-7: Horizontal at all times
+    col-xs-8: Horizontal at all times
+    col-xs-9: Horizontal at all times
+    col-xs-10: Horizontal at all times
+    col-xs-11: Horizontal at all times
+    col-xs-12: Horizontal at all times
+
+    col-sm-1: 750px.\nColumn width ~62px
+    col-sm-2: 750px.\nColumn width ~62px
+    col-sm-3: 750px.\nColumn width ~62px
+    col-sm-4: 750px.\nColumn width ~62px
+    col-sm-5: 750px.\nColumn width ~62px
+    col-sm-6: 750px.\nColumn width ~62px
+    col-sm-7: 750px.\nColumn width ~62px
+    col-sm-8: 750px.\nColumn width ~62px
+    col-sm-9: 750px.\nColumn width ~62px
+    col-sm-10: 750px.\nColumn width ~62px
+    col-sm-11: 750px.\nColumn width ~62px
+    col-sm-12: 750px.\nColumn width ~62px
+
+    col-md-1: 970px.\nColumn width ~81px
+    col-md-2: 970px.\nColumn width ~81px
+    col-md-3: 970px.\nColumn width ~81px
+    col-md-4: 970px.\nColumn width ~81px
+    col-md-5: 970px.\nColumn width ~81px
+    col-md-6: 970px.\nColumn width ~81px
+    col-md-7: 970px.\nColumn width ~81px
+    col-md-8: 970px.\nColumn width ~81px
+    col-md-9: 970px.\nColumn width ~81px
+    col-md-10: 970px.\nColumn width ~81px
+    col-md-11: 970px.\nColumn width ~81px
+    col-md-12: 970px.\nColumn width ~81px
+
+    col-lg-1: 1170px.\nColumn width ~97px
+    col-lg-2: 1170px.\nColumn width ~97px
+    col-lg-3: 1170px.\nColumn width ~97px
+    col-lg-4: 1170px.\nColumn width ~97px
+    col-lg-5: 1170px.\nColumn width ~97px
+    col-lg-6: 1170px.\nColumn width ~97px
+    col-lg-7: 1170px.\nColumn width ~97px
+    col-lg-8: 1170px.\nColumn width ~97px
+    col-lg-9: 1170px.\nColumn width ~97px
+    col-lg-10: 1170px.\nColumn width ~97px
+    col-lg-11: 1170px.\nColumn width ~97px
+    col-lg-12: 1170px.\nColumn width ~97px
+
+    col-xs-offset-1: Increase the left margin of a column 
+    col-xs-offset-2: Increase the left margin of a column
+    col-xs-offset-3: Increase the left margin of a column
+    col-xs-offset-4: Increase the left margin of a column
+    col-xs-offset-5: Increase the left margin of a column
+    col-xs-offset-6: Increase the left margin of a column
+    col-xs-offset-7: Increase the left margin of a column
+    col-xs-offset-8: Increase the left margin of a column
+    col-xs-offset-9: Increase the left margin of a column
+    col-xs-offset-10: Increase the left margin of a column
+    col-xs-offset-11: Increase the left margin of a column
+    col-xs-offset-12: Increase the left margin of a column
+
+    col-sm-offset-1: Increase the left margin of a column 
+    col-sm-offset-2: Increase the left margin of a column
+    col-sm-offset-3: Increase the left margin of a column
+    col-sm-offset-4: Increase the left margin of a column
+    col-sm-offset-5: Increase the left margin of a column
+    col-sm-offset-6: Increase the left margin of a column
+    col-sm-offset-7: Increase the left margin of a column
+    col-sm-offset-8: Increase the left margin of a column
+    col-sm-offset-9: Increase the left margin of a column
+    col-sm-offset-10: Increase the left margin of a column
+    col-sm-offset-11: Increase the left margin of a column
+    col-sm-offset-12: Increase the left margin of a column
+
+    col-md-offset-1: Increase the left margin of a column 
+    col-md-offset-2: Increase the left margin of a column
+    col-md-offset-3: Increase the left margin of a column
+    col-md-offset-4: Increase the left margin of a column
+    col-md-offset-5: Increase the left margin of a column
+    col-md-offset-6: Increase the left margin of a column
+    col-md-offset-7: Increase the left margin of a column
+    col-md-offset-8: Increase the left margin of a column
+    col-md-offset-9: Increase the left margin of a column
+    col-md-offset-10: Increase the left margin of a column
+    col-md-offset-11: Increase the left margin of a column
+    col-md-offset-12: Increase the left margin of a column
+
+    col-lg-offset-1: Increase the left margin of a column 
+    col-lg-offset-2: Increase the left margin of a column
+    col-lg-offset-3: Increase the left margin of a column
+    col-lg-offset-4: Increase the left margin of a column
+    col-lg-offset-5: Increase the left margin of a column
+    col-lg-offset-6: Increase the left margin of a column
+    col-lg-offset-7: Increase the left margin of a column
+    col-lg-offset-8: Increase the left margin of a column
+    col-lg-offset-9: Increase the left margin of a column
+    col-lg-offset-10: Increase the left margin of a column
+    col-lg-offset-11: Increase the left margin of a column
+    col-lg-offset-12: Increase the left margin of a column
+
+    col-xs-push-1:
+    col-xs-push-2:
+    col-xs-push-3:
+    col-xs-push-4:
+    col-xs-push-5:
+    col-xs-push-6:
+    col-xs-push-7:
+    col-xs-push-8:
+    col-xs-push-9:
+    col-xs-push-10:
+    col-xs-push-11:
+    col-xs-push-12:
+
+    col-sm-push-1:
+    col-sm-push-2:
+    col-sm-push-3:
+    col-sm-push-4:
+    col-sm-push-5:
+    col-sm-push-6:
+    col-sm-push-7:
+    col-sm-push-8:
+    col-sm-push-9:
+    col-sm-push-10:
+    col-sm-push-11:
+    col-sm-push-12:
+
+    col-md-push-1:
+    col-md-push-2:
+    col-md-push-3:
+    col-md-push-4:
+    col-md-push-5:
+    col-md-push-6:
+    col-md-push-7:
+    col-md-push-8:
+    col-md-push-9:
+    col-md-push-10:
+    col-md-push-11:
+    col-md-push-12:
+
+    col-lg-push-1:
+    col-lg-push-2:
+    col-lg-push-3:
+    col-lg-push-4:
+    col-lg-push-5:
+    col-lg-push-6:
+    col-lg-push-7:
+    col-lg-push-8:
+    col-lg-push-9:
+    col-lg-push-10:
+    col-lg-push-11:
+    col-lg-push-12:
+
+    col-xs-pull-1:
+    col-xs-pull-2:
+    col-xs-pull-3:
+    col-xs-pull-4:
+    col-xs-pull-5:
+    col-xs-pull-6:
+    col-xs-pull-7:
+    col-xs-pull-8:
+    col-xs-pull-9:
+    col-xs-pull-10:
+    col-xs-pull-11:
+    col-xs-pull-12:
+
+    col-sm-pull-1:
+    col-sm-pull-2:
+    col-sm-pull-3:
+    col-sm-pull-4:
+    col-sm-pull-5:
+    col-sm-pull-6:
+    col-sm-pull-7:
+    col-sm-pull-8:
+    col-sm-pull-9:
+    col-sm-pull-10:
+    col-sm-pull-11:
+    col-sm-pull-12:
+
+    col-md-pull-1:
+    col-md-pull-2:
+    col-md-pull-3:
+    col-md-pull-4:
+    col-md-pull-5:
+    col-md-pull-6:
+    col-md-pull-7:
+    col-md-pull-8:
+    col-md-pull-9:
+    col-md-pull-10:
+    col-md-pull-11:
+    col-md-pull-12:
+
+    col-lg-pull-1:
+    col-lg-pull-2:
+    col-lg-pull-3:
+    col-lg-pull-4:
+    col-lg-pull-5:
+    col-lg-pull-6:
+    col-lg-pull-7:
+    col-lg-pull-8:
+    col-lg-pull-9:
+    col-lg-pull-10:
+    col-lg-pull-11:
+    col-lg-pull-12:
+
+    row: Predefined grid class
+
+  container: &CONTAINER
+    container-fluid: Create the fluid layouts in order to utilize the 100% width of the viewport.
+    container: Fixed-width layout
+
+attributes:
+
+  - class:
+      t: div
+      v: *GRID
+  - class:
+      t: div
+      v: *CONTAINER
+
+  - class:
+      t: div
+      v:
+        clearfix: |
+          Add the extra clearfix for only the required viewport
+          “micro clearfix” generates pseudo-elements and sets their display to table. This creates an anonymous table-cell and a new block formatting context that means the :before pseudo-element prevents top-margin collapse. The :after pseudo-element is used to clear the floats. As a result, there is no need to hide any generated content and the total amount of code needed is reduced.
+  - class:
+      t: [h1, h2, h3, h4, h5, h6]
+      v:
+        small: Create lighter, secondary text in any heading
+
+  # text:
+  - class:
+      t: global
+      v:
+        text-left: Left aligned text.
+        text-center: Center aligned text.
+        text-right: Right aligned text.
+        text-justify: Justified text.
+        text-nowrap: No wrap text.
+        small: |
+          For de-emphasizing inline or blocks of text, use the <small> tag to set text at 85% the size of the parent.
+          Heading elements receive their own font-size for nested <small> elements.
+        text-lowercase: Lowercased text.
+        text-uppercase: Uppercased text.
+        text-capitalize: Capitalized text.
+
+  - class:
+      t: abbr
+      v: 
+        initialism: Add .initialism to an abbreviation for a slightly smaller font-size.
+
+  - class:
+      t: blockquote
+      v:
+        blockquote-reverse: A blockquote with right-aligned content
+  - class:
+      t: [ul, ol]
+      v:
+        list-unstyled: |
+          Remove the default list-style and left margin on list items (immediate children only).
+          This only applies to immediate children list items, meaning you will need to add the class for any nested lists as well.
+        list-inline: Place all list items on a single line with display: inline-block; and some light padding.
+  - class:
+      t: dl
+      v: Make terms and descriptions in <dl> line up side-by-side. Starts off stacked like default <dl>s, but when the navbar expands, so do these.
+
+  # tables
+  - class:
+      t: form
+      v:
+        form-inline: |
+          Left-aligned and inline-block controls.
+          This only applies to forms within viewports that are at least 768px wide.
+        form-horizontal: |
+          Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding .form-horizontal to the form.
+          Doing so changes .form-groups to behave as grid rows, so no need for .row.
+
+  - class:
+      t: label
+      v:
+        sr-only: Hide the labels, Show only for screan reader.
+
+  - class:
+      t: table
+      v:
+        table: |
+          For basic styling—light padding and only horizontal dividers.
+          It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles.
+        table-striped: Striped tables are styled via the :nth-child CSS selector, which is not available in Internet Explorer 8.
+        table-bordered: Bordered version
+        table-hover: Enable a hover state on table rows within a <tbody>
+        table-condensed: Make tables more compact by cutting cell padding in half.
+        table-responsive: |
+          Create responsive tables by wrapping any .table in .table-responsive to make them scroll horizontally on small devices (under 768px).
+          When viewing on anything larger than 768px wide, you will not see any difference in these tables.
+
+  - class:
+      t: [tr, td]
+      v: [active, success, warning, danger, info]
+
+  - class:
+      t: [table, th, td, tr, thead, tbody, tfoot, ]
+      
+
+  # forms
+  - class:
+      t: [input, textarea, select]
+      v:
+        form-control: Set to width: 100%; by default. Wrap labels and controls in .form-group for optimum spacing.
+
+  - class:
+      t: div
+      v: 
+        form-group: Wrap labels and controls in .form-group for optimum spacing.
+
+# TAGS
+tags:
+  mark: Highlighting text
+  s: Indicating blocks of text that are no longer relevant
+  del: Indicating blocks of text that have been deleted
+  ins: Indicating additions to the document
+  u: Underline text
+  small: |
+    For de-emphasizing inline or blocks of text, use the <small> tag to set text at 85% the size of the parent.
+
+    Heading elements receive their own font-size for nested <small> elements.
+  strong: Bold. Emphasizing a snippet of text with a heavier font-weight.
+  em: Italics
+  abbr: |
+    Stylized implementation of HTML's <abbr> element for abbreviations and acronyms to show the expanded version on hover.
+    Abbreviations with a title attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover.
+    <abbr title="attribute">attr</abbr>
+  address: |
+    Present contact information for the nearest ancestor or the entire body of work.
+    Preserve formatting by ending all lines with <br>.
+
+    <address>
+      <strong>Twitter, Inc.</strong><br>
+      795 Folsom Ave, Suite 600<br>
+      San Francisco, CA 94107<br>
+      <abbr title="Phone">P:</abbr> (123) 456-7890
+    </address>
+
+  blockquote: |
+    Wrap <blockquote> around any HTML as the quote. For straight quotes, we recommend a <p>
+    Add a <footer> for identifying the source. Wrap the name of the source work in <cite>
+
+  footer: (<blockquote>) Naming a source. Identifying the source
+  cite: (<blockquote>) Naming a source.
+
+  code:
+  section:
+  kbd:
+  pre:
+  var:
+  samp:
+  
