@@ -306,9 +306,8 @@ attributes:
       t: [tr, td]
       v: [active, success, warning, danger, info]
 
-  - class:
-      t: [table, th, td, tr, thead, tbody, tfoot, ]
-      
+  # - class:
+  #     t: [table, th, td, tr, thead, tbody, tfoot ]    
 
   # forms
   - class:
@@ -362,4 +361,4 @@ tags:
   pre:
   var:
   samp:
-  
+

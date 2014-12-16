@@ -1,0 +1,2 @@
+form-horizontal Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding .form-horizontal to the form.\nDoing so changes .form-groups to behave as grid rows, so no need for .row.\n
+form-inline Left-aligned and inline-block controls.\nThis only applies to forms within viewports that are at least 768px wide.\n

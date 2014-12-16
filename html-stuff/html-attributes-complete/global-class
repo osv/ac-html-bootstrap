@@ -1,0 +1,9 @@
+small For de-emphasizing inline or blocks of text, use the <small> tag to set text at 85% the size of the parent.\nHeading elements receive their own font-size for nested <small> elements.\n
+text-capitalize Capitalized text.
+text-center Center aligned text.
+text-justify Justified text.
+text-left Left aligned text.
+text-lowercase Lowercased text.
+text-nowrap No wrap text.
+text-right Right aligned text.
+text-uppercase Uppercased text.
