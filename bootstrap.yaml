@@ -358,6 +358,8 @@ attributes:
         disabled: |
           To have the <label> for the checkbox or radio also display a "not-allowed" cursor when the user hovers over the label, add the .disabled class to your:
           .radio, .radio-inline, .checkbox, .checkbox-inline, or <fieldset>.
+
+          For <a>  Opera <18, IE11 use JS to disable such link.
         radio:
         radio-inline:
         checkbox:
@@ -376,6 +378,54 @@ attributes:
               </div>
             </div>
 
+  # button
+  - class:
+      t: &BUTTONS [button, a, input]
+      v:
+        btn: Highly recommend using the <button> element whenever possible to ensure matching cross-browser rendering.
+        btn-default:
+        btn-primary:
+        btn-success:
+        btn-info:
+        btn-warning:
+        btn-danger:
+        btn-link: Deemphasize a button by making it look like a link while maintaining button behavior
+
+  - class:
+      t: *BUTTONS
+      v:
+        btn-lg: &BTNSIZE Button sizing
+        btn-sm: *BTNSIZE
+        btn-xs: *BTNSIZE
+        btn-block: Create block level buttons—those that span the full width of a parent
+        active: Pressed button
+        disabled: |
+          Disabled state.
+
+          For <a>  Opera <18, IE11 use JS to disable such link.
+
+  # labels
+  - class:
+      t: label
+      v:
+        label:
+        label-default:
+        label-primary:
+        label-success:
+        label-info:
+        label-warning:
+        label-danger:
+        
+  # Attribute description
+  - disabled:
+      t: fieldset
+      d: |
+        Disable all the controls within the <fieldset> at once.
+        For <a class="btn">  Opera <18, IE11 use JS to disable such link.
+
+        While Bootstrap will apply these styles in all browsers, Internet Explorer 11 and below don't fully support the disabled attribute on a <fieldset>.
+        Use custom JavaScript to disable the fieldset in these browsers.
+  
 # TAGS
 tags:
   mark: Highlighting text
