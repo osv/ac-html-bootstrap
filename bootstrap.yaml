@@ -415,7 +415,61 @@ attributes:
         label-info:
         label-warning:
         label-danger:
+
+  # images
+  - class:
+      t: img
+      v:
+        img-responsive: |
+          This applies
+           { max-width: 100%; height: auto; }
+          to the image so that it scales nicely to the parent element.
+        img-rounded: Adds border-radius:6px to give the image rounded corners.
+        img-circle: Makes the entire image round by adding border-radius:500px.
+        img-thumbnail: Adds a bit of padding and a gray border:
+
+  # helpers
+
+  - class:
+      t: [p, span, div]
+      v:
+        text-muted: &TXTHELPER |
+          Contextual colors
+          Convey meaning through color with a handful of emphasis utility classes.
+          These may also be applied to links and will darken on hover just like our default link styles.
+        text-primary: *TXTHELPER
+        text-success: *TXTHELPER
+        text-info: *TXTHELPER
+        text-warning: *TXTHELPER
+        text-danger: *TXTHELPER
+        bg-primary: &TXTHELPERBG Contextual backgrounds
+        bg-success: *TXTHELPERBG
+        bg-info: *TXTHELPERBG
+        bg-warning: *TXTHELPERBG
+        bg-danger: *TXTHELPERBG
+
+  - class:
+      t: [button, a]
+      v:
+        close: Generic close icon for dismissing content like modals and alerts.
         
+  - class:
+      t: [p, div, span]
+      v: 
+        pull-left: Float an element to the left with a class
+        pull-right: Float an element to the right with a class
+        center-block: Center content blocks
+        show: Force an element to be shown including for screen readers 
+        hidden: Force an element to be hidden including for screen readers 
+
+  # Accessibility
+  - class:
+      t: global
+      v:
+        sr-only: Hides an element to all devices except screen readers
+        sr-only-focusable: Combine with .sr-only to show the element again when it is focused (e.g. by a keyboard-only user)
+        text-hide: "Replace an element's text content with a background image."
+
   # Attribute description
   - disabled:
       t: fieldset
