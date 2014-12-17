@@ -210,8 +210,6 @@ types:
     col-lg-pull-11:
     col-lg-pull-12:
 
-    row: Predefined grid class
-
   container: &CONTAINER
     container-fluid: Create the fluid layouts in order to utilize the 100% width of the viewport.
     container: Fixed-width layout
@@ -219,8 +217,12 @@ types:
 attributes:
 
   - class:
-      t: div
+      t: [div, label]
       v: *GRID
+  - class:
+      t: div
+      v:
+        row: Predefined grid class
   - class:
       t: div
       v: *CONTAINER
