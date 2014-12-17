@@ -276,21 +276,6 @@ attributes:
 
   # tables
   - class:
-      t: form
-      v:
-        form-inline: |
-          Left-aligned and inline-block controls.
-          This only applies to forms within viewports that are at least 768px wide.
-        form-horizontal: |
-          Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding .form-horizontal to the form.
-          Doing so changes .form-groups to behave as grid rows, so no need for .row.
-
-  - class:
-      t: label
-      v:
-        sr-only: Hide the labels, Show only for screan reader.
-
-  - class:
       t: table
       v:
         table: |
@@ -313,14 +298,83 @@ attributes:
 
   # forms
   - class:
+      t: form
+      v:
+        form-inline: |
+          Left-aligned and inline-block controls.
+          This only applies to forms within viewports that are at least 768px wide.
+        form-horizontal: |
+          Predefined grid classes to align labels and groups of form controls in a horizontal layout.
+          NO NEED FOR .row
+
+  - class:
       t: [input, textarea, select]
       v:
         form-control: Set to width: 100%; by default. Wrap labels and controls in .form-group for optimum spacing.
-
+        input-lg: &FMMOD modifier classes to decrease or increase the height and font-size of form controls
+        input-sm: *FMMOD
+  - class:
+      t: [label]
+      v:
+        sr-only: |
+          Screen readers will have trouble with your forms if you don't include a label for every input.
+          For these inline forms, you can hide the labels using the .sr-only class. 
+            <div class="form-group">
+              <label class="sr-only" for="pwf">Password</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Password">
+            </div>
+  - class:
+      t: span
+      v:
+        sr-only: |
+          Screen readers
+          <span id="err" class="sr-only">(error)</span>          
   - class:
       t: div
       v: 
-        form-group: Wrap labels and controls in .form-group for optimum spacing.
+        form-group: |
+          Wrap labels and controls in .form-group for optimum spacing.
+          Don't mix form groups with input groups
+        form-group-lg: &FMGRMOD Styles to the inputs and labels within a .form-group.
+        form-group-sm: *FMGRMOD
+        has-warning: &HASTEXT Any .control-label, .form-control, and .help-block within that element will receive the validation styles.
+        has-error: *HASTEXT
+        has-success: *HASTEXT
+        has-feedback: |
+          Add right feedback icon.
+          Feedback icons only work with textual <input class="form-control"> elements
+           (error)
+          Ex.
+           <div class="form-group has-success has-feedback">
+            <label class="control-label" for="success">Input with success</label>
+            <input type="text" class="form-control" id="success" aria-describedby="successStatus">
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            <span id="successStatus" class="sr-only">(success)</span>
+           </div>
+
+  - class:
+      t: [div, label]
+      v:
+        disabled: |
+          To have the <label> for the checkbox or radio also display a "not-allowed" cursor when the user hovers over the label, add the .disabled class to your:
+          .radio, .radio-inline, .checkbox, .checkbox-inline, or <fieldset>.
+        radio:
+        radio-inline:
+        checkbox:
+        checkbox-inline:
+        fieldset:
+  - class:
+      t: p
+      v:
+        form-control-static: |
+          Place plain text next to a form label within a form
+           <form class="form-horizontal" role="form">
+             <div class="form-group">
+             <label class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <p class="form-control-static">email@example.com</p>
+              </div>
+            </div>
 
 # TAGS
 tags:
