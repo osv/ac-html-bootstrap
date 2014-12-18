@@ -1,5 +1,7 @@
 types:
 
+  buttons: &BUTTONS [button, a, input]
+
   # GRID SYSTEM
   grid: &GRID
     col-xs-1: Horizontal at all times
@@ -210,6 +212,237 @@ types:
     col-lg-pull-11:
     col-lg-pull-12:
 
+  responsive: &RESPONSIVE
+    visible-xs-block: Extra small devices (<768px).\nSet Visible of component
+    visible-sm-block: Small devices (>768px).\nSet Visible of component
+    visible-md-block: Medium devices (>992px).\nSet Visible of component
+    visible-lg-block: Large devices (>1200px).\nSet Visible of component
+
+    visible-xs-inline: Extra small devices (<768px).\nSet Visible of component
+    visible-sm-inline: Small devices (>768px).\nSet Visible of component
+    visible-md-inline: Medium devices (>992px).\nSet Visible of component
+    visible-lg-inline: Large devices (>1200px).\nSet Visible of component
+
+    visible-xs-inline-block: Extra small devices (<768px).\nSet Visible of component
+    visible-sm-inline-block: Small devices (>768px).\nSet Visible of component
+    visible-md-inline-block: Medium devices (>992px).\nSet Visible of component
+    visible-lg-inline-block: Large devices (>1200px).\nSet Visible of component
+
+    hidden-xs: Hidden for extra small devices (<768px)
+    hidden-sm: Hidden for small devices (>768px)
+    hidden-md: Hidden for medium devices (>992px)
+    hidden-lg: Hidden for large devices (>1200px)
+
+    visible-print-block: &TGLPRNCNT Toggling content for print
+    visible-print-inline: *TGLPRNCNT
+    visible-print-inline-block: *TGLPRNCNT
+    hidden-print: *TGLPRNCNT
+
+  icons: &GLYPHICONS
+    glyphicon: |
+      Base class
+      Be sure to leave a space between the icon and text for proper padding.
+    glyphicon-asterisk:
+    glyphicon-plus:
+    glyphicon-euro:
+    glyphicon-minus:
+    glyphicon-cloud:
+    glyphicon-envelope:
+    glyphicon-pencil:
+    glyphicon-glass:
+    glyphicon-music:
+    glyphicon-search:
+    glyphicon-heart:
+    glyphicon-star:
+    glyphicon-star-empty:
+    glyphicon-user:
+    glyphicon-film:
+    glyphicon-th-large:
+    glyphicon-th:
+    glyphicon-th-list:
+    glyphicon-ok:
+    glyphicon-remove:
+    glyphicon-zoom-in:
+    glyphicon-zoom-out:
+    glyphicon-off:
+    glyphicon-signal:
+    glyphicon-cog:
+    glyphicon-trash:
+    glyphicon-home:
+    glyphicon-file:
+    glyphicon-time:
+    glyphicon-road:
+    glyphicon-download-alt:
+    glyphicon-download:
+    glyphicon-upload:
+    glyphicon-inbox:
+    glyphicon-play-circle:
+    glyphicon-repeat:
+    glyphicon-refresh:
+    glyphicon-list-alt:
+    glyphicon-lock:
+    glyphicon-flag:
+    glyphicon-headphones:
+    glyphicon-volume-off:
+    glyphicon-volume-down:
+    glyphicon-volume-up:
+    glyphicon-qrcode:
+    glyphicon-barcode:
+    glyphicon-tag:
+    glyphicon-tags:
+    glyphicon-book:
+    glyphicon-bookmark:
+    glyphicon-print:
+    glyphicon-camera:
+    glyphicon-font:
+    glyphicon-bold:
+    glyphicon-italic:
+    glyphicon-text-height:
+    glyphicon-text-width:
+    glyphicon-align-left:
+    glyphicon-align-center:
+    glyphicon-align-right:
+    glyphicon-align-justify:
+    glyphicon-list:
+    glyphicon-indent-left:
+    glyphicon-indent-right:
+    glyphicon-facetime-video:
+    glyphicon-picture:
+    glyphicon-map-marker:
+    glyphicon-adjust:
+    glyphicon-tint:
+    glyphicon-edit:
+    glyphicon-share:
+    glyphicon-check:
+    glyphicon-move:
+    glyphicon-step-backward:
+    glyphicon-fast-backward:
+    glyphicon-backward:
+    glyphicon-play:
+    glyphicon-pause:
+    glyphicon-stop:
+    glyphicon-forward:
+    glyphicon-fast-forward:
+    glyphicon-step-forward:
+    glyphicon-eject:
+    glyphicon-chevron-left:
+    glyphicon-chevron-right:
+    glyphicon-plus-sign:
+    glyphicon-minus-sign:
+    glyphicon-remove-sign:
+    glyphicon-ok-sign:
+    glyphicon-question-sign:
+    glyphicon-info-sign:
+    glyphicon-screenshot:
+    glyphicon-remove-circle:
+    glyphicon-ok-circle:
+    glyphicon-ban-circle:
+    glyphicon-arrow-left:
+    glyphicon-arrow-right:
+    glyphicon-arrow-up:
+    glyphicon-arrow-down:
+    glyphicon-share-alt:
+    glyphicon-resize-full:
+    glyphicon-resize-small:
+    glyphicon-exclamation-sign:
+    glyphicon-gift:
+    glyphicon-leaf:
+    glyphicon-fire:
+    glyphicon-eye-open:
+    glyphicon-eye-close:
+    glyphicon-warning-sign:
+    glyphicon-plane:
+    glyphicon-calendar:
+    glyphicon-random:
+    glyphicon-comment:
+    glyphicon-magnet:
+    glyphicon-chevron-up:
+    glyphicon-chevron-down:
+    glyphicon-retweet:
+    glyphicon-shopping-cart:
+    glyphicon-folder-close:
+    glyphicon-folder-open:
+    glyphicon-resize-vertical:
+    glyphicon-resize-horizontal:
+    glyphicon-hdd:
+    glyphicon-bullhorn:
+    glyphicon-bell:
+    glyphicon-certificate:
+    glyphicon-thumbs-up:
+    glyphicon-thumbs-down:
+    glyphicon-hand-right:
+    glyphicon-hand-left:
+    glyphicon-hand-up:
+    glyphicon-hand-down:
+    glyphicon-circle-arrow-right:
+    glyphicon-circle-arrow-left:
+    glyphicon-circle-arrow-up:
+    glyphicon-circle-arrow-down:
+    glyphicon-globe:
+    glyphicon-wrench:
+    glyphicon-tasks:
+    glyphicon-filter:
+    glyphicon-briefcase:
+    glyphicon-fullscreen:
+    glyphicon-dashboard:
+    glyphicon-paperclip:
+    glyphicon-heart-empty:
+    glyphicon-link:
+    glyphicon-phone:
+    glyphicon-pushpin:
+    glyphicon-usd:
+    glyphicon-gbp:
+    glyphicon-sort:
+    glyphicon-sort-by-alphabet:
+    glyphicon-sort-by-alphabet-alt:
+    glyphicon-sort-by-order:
+    glyphicon-sort-by-order-alt:
+    glyphicon-sort-by-attributes:
+    glyphicon-sort-by-attributes-alt:
+    glyphicon-unchecked:
+    glyphicon-expand:
+    glyphicon-collapse-down:
+    glyphicon-collapse-up:
+    glyphicon-log-in:
+    glyphicon-flash:
+    glyphicon-log-out:
+    glyphicon-new-window:
+    glyphicon-record:
+    glyphicon-save:
+    glyphicon-open:
+    glyphicon-saved:
+    glyphicon-import:
+    glyphicon-export:
+    glyphicon-send:
+    glyphicon-floppy-disk:
+    glyphicon-floppy-saved:
+    glyphicon-floppy-remove:
+    glyphicon-floppy-save:
+    glyphicon-floppy-open:
+    glyphicon-credit-card:
+    glyphicon-transfer:
+    glyphicon-cutlery:
+    glyphicon-header:
+    glyphicon-compressed:
+    glyphicon-earphone:
+    glyphicon-phone-alt:
+    glyphicon-tower:
+    glyphicon-stats:
+    glyphicon-sd-video:
+    glyphicon-hd-video:
+    glyphicon-subtitles:
+    glyphicon-sound-stereo:
+    glyphicon-sound-dolby:
+    glyphicon-sound-5-1:
+    glyphicon-sound-6-1:
+    glyphicon-sound-7-1:
+    glyphicon-copyright-mark:
+    glyphicon-registration-mark:
+    glyphicon-cloud-download:
+    glyphicon-cloud-upload:
+    glyphicon-tree-conifer:
+    glyphicon-tree-deciduous:
+
   container: &CONTAINER
     container-fluid: Create the fluid layouts in order to utilize the 100% width of the viewport.
     container: Fixed-width layout
@@ -380,7 +613,7 @@ attributes:
 
   # button
   - class:
-      t: &BUTTONS [button, a, input]
+      t: *BUTTONS
       v:
         btn: Highly recommend using the <button> element whenever possible to ensure matching cross-browser rendering.
         btn-default:
@@ -462,15 +695,198 @@ attributes:
         show: Force an element to be shown including for screen readers 
         hidden: Force an element to be hidden including for screen readers 
 
+  - class:
+      t: global
+      v: *RESPONSIVE
+
   # Accessibility
   - class:
       t: global
       v:
         sr-only: Hides an element to all devices except screen readers
-        sr-only-focusable: Combine with .sr-only to show the element again when it is focused (e.g. by a keyboard-only user)
+        sr-only-focusable: Combine with .sr-only to show the element again when it is focused e.g. by a keyboard-only user
         text-hide: "Replace an element's text content with a background image."
 
+  - class:
+      t: span
+      v: *GLYPHICONS
+
+  # dropdowns and button group
+  - class:
+      t: span
+      v: 
+        caret:
+        icon-bar: |
+          May be used in ".navbar-toggle .collapsed" as collapse toggle button
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>      
+
+  - data-toggle:
+      t: *BUTTONS
+      v:
+        dropdown: |
+          <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+      d: Toggle facility
+  - class:
+      t: *BUTTONS
+      v: 
+        dropdown-toggle:
+
+  - class:
+      t: ul
+      v:
+        dropdown-menu:
+        dropdown-menu-right:
+        dropdown-menu-left:
+
+  - class:
+      t: li
+      v:
+        dropdown-header: Add a header to label sections of actions in any dropdown menu.
+        divider: Add a divider to separate series of links in a dropdown menu.
+        disabled:
+
+  - data-toggle:
+      t: *BUTTONS
+      v: collapse
+
+  - data-target:
+      t: *BUTTONS
+      v: 
+        "#bs-": d
+      d: Link to collected nav links, forms, and other content for toggling
+
+  - class:
+      t: div
+      v:
+        btn-group: |
+          Group a series of buttons together on a single line with the button group.
+          Place a .btn-group within another .btn-group when you want dropdown menus mixed with a series of buttons.
+        btn-toolbar: |
+          <div class="btn-toolbar">
+            <div class="btn-group">
+        btn-group-lg:
+        btn-group-sm:
+        btn-group-xs:
+        btn-group-vertical: Make a set of buttons appear vertically stacked rather than horizontally
+        btn-group-justified: |
+          Make a group of buttons stretch at equal sizes to span the entire width of its parent. Also works with button dropdowns within the button group.
+            <div class="btn-group btn-group-justified" role="group"..
+
+  # input groups
+  - class:
+      t: div 
+      v:
+        input-group: |
+          Place one add-on or button on either side of an input
+           <div class="input-group">
+             <span class="input-group-addon">@</span>
+             <input type="text" class="form-control" placeholder="Username">
+           </div>
+        input-group-lg:
+        input-group-sm:
+        input-group-btn: |
+          Segmented buttons
+           <div class="input-group">
+            <div class="input-group-btn">
+               Button and dropdown menu here
+            </div>
+            <input type="text" class="form-control">
+          </div>
+  - class:
+      t: span
+      v: 
+        input-group-addon: |
+          <div class="input-group">
+             <span class="input-group-addon">@</span>
+             <input type="text" class="form-control" placeholder="Username">
+
+  # Nav
+  - class:
+      t: ul
+      v:
+        nav:
+        nav-tabs:
+        nav-pills:
+        nav-stacked: |
+          Vertically stackable pills
+          <ul class="nav nav-pills nav-stacked">
+            ..
+          </ul>
+        nav-justified:
+        navbar-nav:
+
+  - class:
+      t: [button, a, div]
+      v: 
+        navbar-brand: |
+          Replace the navbar brand with your own image by swapping the text for an <img>.
+          Since the .navbar-brand has its own padding and height, you may need to override some CSS depending on your image.
+          <div class="navbar-header">
+           <a class="navbar-brand"..
+
+  - class:
+      t: li
+      v: 
+        active: |
+          <ul class="nav nav-tabs">
+            <li class="active"><a href=..
+            <li>..
+        disabled: |
+          This class will only change the <a>'s appearance, not its functionality.
+          Use custom JavaScript to disable links here.
+
+  - class:
+      t: [nav, div]
+      v:
+        navbar: |
+          <nav class="navbar navbar-default"
+        navbar-default:
+        navbar-inverse: Modify the look of the navbar 
+        navbar-fixed-top: |
+          Fixed to top.
+          Include a .container or .container-fluid to center and pad navbar content.
+          Also add padding! "body { padding-top: 70px; }" (after bs css)
+        navbar-fixed-bottom: |
+          Fixed bottom.
+          Also add padding! "body { padding-bottom: 70px; }" (after bs css)
+        navbar-static-top: Create a full-width navbar that scrolls away with the page by adding
+  - class:
+      t: form
+      v:
+        navbar-form: |
+          Use the alignment options to decide where it resides within the navbar content.
+
+          <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+
+  - class:
+      t: [button, input]
+      v: 
+        navbar-btn: Add the .navbar-btn class to <button> elements not residing in a <form> to vertically center them in the navbar
+  - class:
+      t: [nav, form, a, div, button]
+      v: 
+        navbar-left: These classes are mixin-ed version of .pull-left
+        navbar-right: These classes are mixin-ed version of .pull-right
+  - class:
+      t: [span, p]
+      v: 
+        navbar-text:
+  - class:
+      t: div
+      v:
+        navbar-header: Header of navbar
+        navbar-collapse: |
+          <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#FOO"
+        
+  ########################################
   # Attribute description
+  ########################################
   - disabled:
       t: fieldset
       d: |
