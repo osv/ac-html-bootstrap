@@ -1,3 +1,18 @@
+bg-danger Contextual backgrounds
+bg-info Contextual backgrounds
+bg-primary Contextual backgrounds
+bg-success Contextual backgrounds
+bg-warning Contextual backgrounds
+btn-group Group a series of buttons together on a single line with the button group.\nPlace a .btn-group within another .btn-group when you want dropdown menus mixed with a series of buttons.\n
+btn-group-justified Make a group of buttons stretch at equal sizes to span the entire width of its parent. Also works with button dropdowns within the button group.\n  <div class="btn-group btn-group-justified" role="group"..\n
+btn-group-lg
+btn-group-sm
+btn-group-vertical Make a set of buttons appear vertically stacked rather than horizontally
+btn-group-xs
+btn-toolbar <div class="btn-toolbar">\n  <div class="btn-group">\n
+center-block Center content blocks
+checkbox
+checkbox-inline
 clearfix Add the extra clearfix for only the required viewport\n“micro clearfix” generates pseudo-elements and sets their display to table. This creates an anonymous table-cell and a new block formatting context that means the :before pseudo-element prevents top-margin collapse. The :after pseudo-element is used to clear the floats. As a result, there is no need to hide any generated content and the total amount of code needed is reduced.\n
 col-lg-1 1170px.\nColumn width ~97px
 col-lg-10 1170px.\nColumn width ~97px
@@ -193,5 +208,40 @@ col-xs-push-8
 col-xs-push-9
 container Fixed-width layout
 container-fluid Create the fluid layouts in order to utilize the 100% width of the viewport.
-form-group Wrap labels and controls in .form-group for optimum spacing.
+disabled To have the <label> for the checkbox or radio also display a "not-allowed" cursor when the user hovers over the label, add the .disabled class to your:\n.radio, .radio-inline, .checkbox, .checkbox-inline, or <fieldset>.\n\nFor <a>  Opera <18, IE11 use JS to disable such link.\n
+fieldset
+form-group Wrap labels and controls in .form-group for optimum spacing.\nDon't mix form groups with input groups\n
+form-group-lg Styles to the inputs and labels within a .form-group.
+form-group-sm Styles to the inputs and labels within a .form-group.
+has-error Any .control-label, .form-control, and .help-block within that element will receive the validation styles.
+has-feedback Add right feedback icon.\nFeedback icons only work with textual <input class="form-control"> elements\n (error)\nEx.\n <div class="form-group has-success has-feedback">\n  <label class="control-label" for="success">Input with success</label>\n  <input type="text" class="form-control" id="success" aria-describedby="successStatus">\n  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>\n  <span id="successStatus" class="sr-only">(success)</span>\n </div>\n
+has-success Any .control-label, .form-control, and .help-block within that element will receive the validation styles.
+has-warning Any .control-label, .form-control, and .help-block within that element will receive the validation styles.
+hidden Force an element to be hidden including for screen readers
+input-group Place one add-on or button on either side of an input\n <div class="input-group">\n   <span class="input-group-addon">@</span>\n   <input type="text" class="form-control" placeholder="Username">\n </div>\n
+input-group-btn Segmented buttons\n <div class="input-group">\n  <div class="input-group-btn">\n     Button and dropdown menu here\n  </div>\n  <input type="text" class="form-control">\n</div>\n
+input-group-lg
+input-group-sm
+navbar <nav class="navbar navbar-default"\n
+navbar-brand Replace the navbar brand with your own image by swapping the text for an <img>.\nSince the .navbar-brand has its own padding and height, you may need to override some CSS depending on your image.\n<div class="navbar-header">\n <a class="navbar-brand"..\n
+navbar-collapse <div class="navbar-header">\n <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#FOO"\n
+navbar-default
+navbar-fixed-bottom Fixed bottom.\nAlso add padding! "body { padding-bottom: 70px; }" (after bs css)\n
+navbar-fixed-top Fixed to top.\nInclude a .container or .container-fluid to center and pad navbar content.\nAlso add padding! "body { padding-top: 70px; }" (after bs css)\n
+navbar-header Header of navbar
+navbar-inverse Modify the look of the navbar
+navbar-left These classes are mixin-ed version of .pull-left
+navbar-right These classes are mixin-ed version of .pull-right
+navbar-static-top Create a full-width navbar that scrolls away with the page by adding
+pull-left Float an element to the left with a class
+pull-right Float an element to the right with a class
+radio
+radio-inline
 row Predefined grid class
+show Force an element to be shown including for screen readers
+text-danger Contextual colors\nConvey meaning through color with a handful of emphasis utility classes.\nThese may also be applied to links and will darken on hover just like our default link styles.\n
+text-info Contextual colors\nConvey meaning through color with a handful of emphasis utility classes.\nThese may also be applied to links and will darken on hover just like our default link styles.\n
+text-muted Contextual colors\nConvey meaning through color with a handful of emphasis utility classes.\nThese may also be applied to links and will darken on hover just like our default link styles.\n
+text-primary Contextual colors\nConvey meaning through color with a handful of emphasis utility classes.\nThese may also be applied to links and will darken on hover just like our default link styles.\n
+text-success Contextual colors\nConvey meaning through color with a handful of emphasis utility classes.\nThese may also be applied to links and will darken on hover just like our default link styles.\n
+text-warning Contextual colors\nConvey meaning through color with a handful of emphasis utility classes.\nThese may also be applied to links and will darken on hover just like our default link styles.\n

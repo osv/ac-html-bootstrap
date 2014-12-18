@@ -1,9 +1,32 @@
+hidden-lg Hidden for large devices (>1200px)
+hidden-md Hidden for medium devices (>992px)
+hidden-print Toggling content for print
+hidden-sm Hidden for small devices (>768px)
+hidden-xs Hidden for extra small devices (<768px)
 small For de-emphasizing inline or blocks of text, use the <small> tag to set text at 85% the size of the parent.\nHeading elements receive their own font-size for nested <small> elements.\n
+sr-only Hides an element to all devices except screen readers
+sr-only-focusable Combine with .sr-only to show the element again when it is focused e.g. by a keyboard-only user
 text-capitalize Capitalized text.
 text-center Center aligned text.
+text-hide Replace an element's text content with a background image.
 text-justify Justified text.
 text-left Left aligned text.
 text-lowercase Lowercased text.
 text-nowrap No wrap text.
 text-right Right aligned text.
 text-uppercase Uppercased text.
+visible-lg-block Large devices (>1200px).\nSet Visible of component
+visible-lg-inline Large devices (>1200px).\nSet Visible of component
+visible-lg-inline-block Large devices (>1200px).\nSet Visible of component
+visible-md-block Medium devices (>992px).\nSet Visible of component
+visible-md-inline Medium devices (>992px).\nSet Visible of component
+visible-md-inline-block Medium devices (>992px).\nSet Visible of component
+visible-print-block Toggling content for print
+visible-print-inline Toggling content for print
+visible-print-inline-block Toggling content for print
+visible-sm-block Small devices (>768px).\nSet Visible of component
+visible-sm-inline Small devices (>768px).\nSet Visible of component
+visible-sm-inline-block Small devices (>768px).\nSet Visible of component
+visible-xs-block Extra small devices (<768px).\nSet Visible of component
+visible-xs-inline Extra small devices (<768px).\nSet Visible of component
+visible-xs-inline-block Extra small devices (<768px).\nSet Visible of component
