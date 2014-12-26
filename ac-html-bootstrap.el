@@ -1,4 +1,4 @@
-;;; ac-html.el --- auto complete source for html tags and attributes
+;;; ac-html-bootstrap.el --- auto complete source for html tags and attributes
 
 ;; Copyright (C) 2014 Olexandr Sydorchuk
 
@@ -32,11 +32,12 @@
   (expand-file-name "html-stuff" (file-name-directory load-file-name))
   "The directory where source of `ac-html-bootstrap' exists.")
 
+;;;###autoload
 (defun ac-html-bootstrap+ ()
   "Enable bootstrap ac-html completion"
   (interactive)
   (make-local-variable 'ac-html-source-dirs)
-  (add-to-list 'ac-html-source-dirs (cons "bootstrap" ac-html-bootstrap-source-dir))
+  (setq ac-html-source-dirs (append (cons "bootstrap" ac-html-bootstrap-source-dir) ac-html-source-dirs))
 )
 
 (provide 'ac-html-bootstrap)
