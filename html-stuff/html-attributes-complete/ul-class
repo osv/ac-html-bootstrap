@@ -1,6 +1,8 @@
+breadcrumb Indicate the current page's location within a navigational hierarchy.\nSeparators are automatically added in CSS through :before and content.\n\nHome / Links / Data\n<ol class="breadcrumb">\n  <li><a href="#">Home</a></li>\n  <li><a href="#">Library</a></li>\n  <li class="active">Data</li>\n</ol>\n
 dropdown-menu
 dropdown-menu-left
 dropdown-menu-right
+list-group
 list-inline Place all list items on a single line with display: inline-block; and some light padding.
 list-unstyled Remove the default list-style and left margin on list items (immediate children only).\nThis only applies to immediate children list items, meaning you will need to add the class for any nested lists as well.\n
 nav
@@ -9,3 +11,7 @@ nav-pills
 nav-stacked Vertically stackable pills\n<ul class="nav nav-pills nav-stacked">\n  ..\n</ul>\n
 nav-tabs
 navbar-nav
+pager By default, the pager centers links.\n <nav>\n   <ul class="pager">\n     <li><a href="#">Previous</a></li>\n     <li><a href="#">Next</a></li>\n   </ul>\n </nav>\n
+pagination Provide pagination links\n\n <nav>\n   <ul class="pagination">\n     <li>\n       <a href="#" aria-label="Previous">\n         <span aria-hidden="true">&laquo;</span>\n       </a>\n     </li>\n     <li><a href="#">1</a></li>\n     <li><a href="#">2</a></li>\n     ..etc..\n
+pagination-lg
+pagination-sm

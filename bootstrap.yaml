@@ -1,7 +1,7 @@
 types:
 
   buttons: &BUTTONS [button, a, input]
-
+  headers: &H1H6 [h1, h2, h3, h4, h5, h6]
   # GRID SYSTEM
   grid: &GRID
     col-xs-1: Horizontal at all times
@@ -467,7 +467,7 @@ attributes:
           Add the extra clearfix for only the required viewport
           “micro clearfix” generates pseudo-elements and sets their display to table. This creates an anonymous table-cell and a new block formatting context that means the :before pseudo-element prevents top-margin collapse. The :after pseudo-element is used to clear the floats. As a result, there is no need to hide any generated content and the total amount of code needed is reduced.
   - class:
-      t: [h1, h2, h3, h4, h5, h6]
+      t: *H1H6
       v:
         small: Create lighter, secondary text in any heading
 
@@ -639,7 +639,7 @@ attributes:
 
   # labels
   - class:
-      t: label
+      t: [label, span]
       v:
         label:
         label-default:
@@ -664,7 +664,7 @@ attributes:
   # helpers
 
   - class:
-      t: [p, span, div]
+      t: [p, span, div, a]
       v:
         text-muted: &TXTHELPER |
           Contextual colors
@@ -687,7 +687,7 @@ attributes:
         close: Generic close icon for dismissing content like modals and alerts.
         
   - class:
-      t: [p, div, span]
+      t: [p, div, span, a]
       v: 
         pull-left: Float an element to the left with a class
         pull-right: Float an element to the right with a class
@@ -804,7 +804,7 @@ attributes:
 
   # Nav
   - class:
-      t: ul
+      t: [ul, ol]
       v:
         nav:
         nav-tabs:
@@ -842,8 +842,8 @@ attributes:
       v:
         navbar: |
           <nav class="navbar navbar-default"
-        navbar-default:
-        navbar-inverse: Modify the look of the navbar 
+        navbar-default: Opposite to .navbar-inverse
+        navbar-inverse: Modify the look of the navbar Opposite to .navbar-default
         navbar-fixed-top: |
           Fixed to top.
           Include a .container or .container-fluid to center and pad navbar content.
@@ -875,7 +875,7 @@ attributes:
   - class:
       t: [span, p]
       v: 
-        navbar-text:
+        navbar-text: Text inside navbad
   - class:
       t: div
       v:
@@ -883,7 +883,221 @@ attributes:
         navbar-collapse: |
           <div class="navbar-header">
            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#FOO"
-        
+  - class:
+      t: a
+      v:
+        navbar-link: |
+          Links that are not within the regular navbar navigation component,
+          use the .navbar-link class to add the proper colors for the default and inverse navbar options.
+
+  # breadcrumb
+  - class:
+      t: [ul, ol]
+      v:
+        breadcrumb: |
+          Indicate the current page's location within a navigational hierarchy.
+          Separators are automatically added in CSS through :before and content.
+
+          Home / Links / Data
+          <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Library</a></li>
+            <li class="active">Data</li>
+          </ol>
+
+  # pagination / pager
+  - class:
+      t: [ul, ol]
+      v:
+        pager: |
+          By default, the pager centers links.
+           <nav>
+             <ul class="pager">
+               <li><a href="#">Previous</a></li>
+               <li><a href="#">Next</a></li>
+             </ul>
+           </nav>
+        pagination-lg:
+        pagination-sm:
+        pagination: |
+          Provide pagination links
+
+           <nav>
+             <ul class="pagination">
+               <li>
+                 <a href="#" aria-label="Previous">
+                   <span aria-hidden="true">&laquo;</span>
+                 </a>
+               </li>
+               <li><a href="#">1</a></li>
+               <li><a href="#">2</a></li>
+               ..etc..
+  - class:
+      t: li
+      v:
+        previous: &PAGERALIGN |
+          You can align each link to the sides .pager
+          <nav>
+            <ul class="pager">
+              <li class="previous"><a href="#">Older</a></li>
+              <li class="next"><a href="#">Newer</a></li>
+            </ul>
+          </nav>
+        next: *PAGERALIGN
+
+  # badge
+  - class:
+      t: span
+      v:
+        badge: Easily highlight new or unread items by adding a <span class="badge"> to links, Bootstrap navs, and more.
+
+  # jambotron
+  - class:
+      t: div
+      v:
+        jumbotron: |
+          A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.
+          To make the jumbotron full width, and without rounded corners,
+          place it outside all .containers and instead add a .container within
+
+  # misc, page-header
+  - class:
+      t: div
+      v:
+        page-header: A simple shell for an h1.
+
+  # thumb
+  - class:
+      t: [div, a, span]
+      v:
+        thumbnail:
+        caption: caption of thumb
+  # alert
+  - class:
+      t: [div, span]
+      v:
+        alert:
+        alert-success:
+        alert-info:
+        alert-warning:
+        alert-danger:
+        alert-dismissible: |
+          Build on any alert by adding an optional .alert-dismissible and close button.
+          Be sure to use the <button> element with the data attribut
+
+          data-dismiss="alert"
+
+          <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Warning!</strong> Better check yourself, you're not looking too good.
+          </div>
+  - data-dismiss:
+      t: *BUTTONS
+      v:
+        alert:
+  - class:
+      t: a
+      v:
+        alert-link: Use the .alert-link utility class to quickly provide matching colored links within any alert.
+
+  # progressbar
+  - class:
+      t: div
+      v:
+        progress:
+        progress-bar: |
+          Show filled bar
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+              60%
+            </div>
+          </div>
+        progress-bar-success:
+        progress-bar-info:
+        progress-bar-warning:
+        progress-bar-danger:
+        progress-bar-striped:
+        active: Animate progress-bar
+
+  # media
+  - class:
+      t: div
+      v:
+        media: |
+          Abstract object styles for building various types of components.
+          (like blog comments, Tweets, etc)
+          that feature a left- or right-aligned image alongside textual content.
+        media-body:
+  - class:
+      t: [div, a, span]
+      v:
+        media-left:
+        media-right:
+        media-middle:
+        media-bottom:
+  - class:
+      t: *H1H6
+      v:
+        media-heading: Media heading, h4
+
+  # list group
+  - class:
+      t: [ul, ol, div]
+      v:
+        list-group:
+  - class:
+      t: [li, a]
+      v:
+        list-group-item:
+        active:
+  - class:
+      t: *H1H6
+      v:
+        list-group-item-heading:
+  - class:
+      t: p
+      v:
+        list-group-item-text:
+
+  # panel
+  - class:
+      t: div
+      v:
+        panel: |
+          While not always necessary, sometimes you need to put your DOM in a box.
+          For those situations, try the panel component.
+        panel-heading: Container for heading and h1-h6 .panel-title
+        panel-default:
+
+        panel-primary: &PANELCONTEXT Opposite to .panel-default
+        panel-success:
+        panel-info:
+        panel-warning:
+        panel-danger:
+
+        panel-body:
+        panel-footer: |
+          Wrap buttons or secondary text in .panel-footer.
+          Note that panel footers do not inherit colors and borders when using contextual variations as they are not meant to be in the foreground.
+  - class:
+      t: *H1H6
+      v:
+        panel-title:
+
+  # Responsive embed
+  - class:
+      t: div
+      v:
+        embed-responsive:
+        embed-responsive-16by9:
+        embed-responsive-4by3:
+  - class:
+      t: [iframe, embed, video, object]
+      v:
+        embed-responsive-item: |
+          Pro-Tip! You don't need to include frameborder="0" in your <iframe>s as we override that for you.
   ########################################
   # Attribute description
   ########################################
