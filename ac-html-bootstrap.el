@@ -37,7 +37,7 @@
   "Enable bootstrap ac-html completion"
   (interactive)
   (make-local-variable 'ac-html-source-dirs)
-  (setq ac-html-source-dirs (append (cons "bootstrap" ac-html-bootstrap-source-dir) ac-html-source-dirs))
-)
+  (unless (assoc "Bootstrap" ac-html-source-dirs)
+    (setq ac-html-source-dirs (cons (cons "Bootstrap" 'ac-html-bootstrap-source-dir) ac-html-source-dirs))))
 
 (provide 'ac-html-bootstrap)
