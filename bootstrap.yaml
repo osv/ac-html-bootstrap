@@ -721,7 +721,22 @@ attributes:
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>      
-
+  - class:
+      t: div
+      v:
+        dropdown: |
+          <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle"
+              data-toggle="dropdown" aria-expanded="true" id="drMenu1">
+                Dropdown
+                  <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="drMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+              </ul>
+          </div>
+        dropup: <div class="btn-group dropup">
   - data-toggle:
       t: *BUTTONS
       v:
@@ -736,7 +751,12 @@ attributes:
   - class:
       t: ul
       v:
-        dropdown-menu:
+        dropdown-menu: |
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Regular link</a></li>
+           <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
+           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another link</a></li>
+          </ul>
         dropdown-menu-right:
         dropdown-menu-left:
 
@@ -763,6 +783,12 @@ attributes:
         btn-group: |
           Group a series of buttons together on a single line with the button group.
           Place a .btn-group within another .btn-group when you want dropdown menus mixed with a series of buttons.
+          
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">Left</button>
+            <button type="button" class="btn btn-default">Middle</button>
+            <button type="button" class="btn btn-default">Right</button>
+          </div>
         btn-toolbar: |
           <div class="btn-toolbar">
             <div class="btn-group">
@@ -776,7 +802,7 @@ attributes:
 
   # input groups
   - class:
-      t: div 
+      t: [ div, span, p ]
       v:
         input-group: |
           Place one add-on or button on either side of an input
@@ -997,6 +1023,7 @@ attributes:
       t: *BUTTONS
       v:
         alert:
+      d: .alert-dismissible. Close alert
   - class:
       t: a
       v:
@@ -1046,7 +1073,18 @@ attributes:
   - class:
       t: [ul, ol, div]
       v:
-        list-group:
+        list-group: |
+          <div class="list-group">
+           <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">...</p>
+           </a>
+          </div>
+
+          or
+
+          <ul class="list-group">
+            <li class="list-group-item...
   - class:
       t: [li, a]
       v:
@@ -1068,6 +1106,12 @@ attributes:
         panel: |
           While not always necessary, sometimes you need to put your DOM in a box.
           For those situations, try the panel component.
+
+          <div class="panel panel-default">
+           <div class="panel-body">
+            Basic panel example
+           </div>
+          </div>
         panel-heading: Container for heading and h1-h6 .panel-title
         panel-default:
 
