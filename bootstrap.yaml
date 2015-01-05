@@ -1254,6 +1254,19 @@ attributes:
           </body>
       t: global
       v: scroll
+  - data-target:
+      d: |
+        For scrollspy.
+        <body data-spy="scroll" data-target=".navbar-example">
+        ..
+          <div class="navbar-example">
+           <ul class="nav nav-tabs" role="tablist">
+        ..
+           </ul>
+          </div>
+        ..
+        </body>
+      t: global
   - data-offset:
       d: Pixels to offset from top when calculating position of scroll.
       t: global
@@ -1519,6 +1532,33 @@ attributes:
       t: li
       d: Carousel controll
       v: [0, 1, 2]
+  # affix.js
+  - data-spy:
+      t: global
+      v:
+        affix: |
+          <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+            <li class="active"><a href="#one">Section One</a></li>
+            <li><a href="#two">Section Two</a></li>
+            <li><a href="#three">Section Three</a></li>
+          </ul>
+          The affix plugin toggles between three classes,
+          each representing a particular state: .affix, .affix-top, and .affix-bottom.
+          You must provide the styles for these classes yourself (independent of this plugin) to handle the actual positions.
+  - data-offset-top:
+      d: &DATAOFFSETAFFIX |
+        Pixels to offset from screen when calculating position of scroll.
+        If a single number is provided, the offset will be applied in both top and bottom directions.
+        To provide a unique, bottom and top offset just provide an object offset:
+          { top: 10 } or offset: { top: 10, bottom: 5 }.
+        Use a function when you need to dynamically calculate an offset.
+      v: [100, 200]
+      t: div
+  - data-offset-bottom:
+      t: div
+      d: *DATAOFFSETAFFIX
+      v: [100, 200]
+
   ########################################
   # Attribute description
   ########################################
