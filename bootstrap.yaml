@@ -1222,7 +1222,7 @@ attributes:
         <div id="myModal" class="modal fade" role="dialog" data-backdrop="true">
       v: [true, false, static]
   - data-keyboard: 
-      d: Closes the modal when escape key is pressed. Default true
+      d: Closes the modal when escape key is pressed. Default true. Carousel - react for keyboard
       t: div
       v: [true, false]
   - data-show:
@@ -1415,7 +1415,110 @@ attributes:
           .panel-collapse .collapse .in
         panel-collapse: |
           Be sure to add the class collapse to the collapsible element. If you'd like it to default open, add the additional class in.
-  
+  # carousel.js
+  - data-ride:
+      t: div
+      v: carousel
+      d: |
+        Used to mark a carousel as animating starting at page load.
+        It cannot be used in combination with (redundant and unnecessary) explicit JavaScript initialization of the same carousel.
+        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+  - class:
+      t: div
+      v: 
+        carousel: |
+          Ensure for JS: $('.carousel').carousel()
+          Ex.
+          <div id="example" class="carousel slide" data-ride="carousel">
+           <!-- Indicators -->
+           <ol class="carousel-indicators">
+            <li data-target="#example" data-slide-to="0" class="active"></li>
+            <li data-target="#example" data-slide-to="1"></li>
+            ..
+           <!-- Wrapper for slides -->
+           <div class="carousel-inner" role="listbox">
+            <div class="item active">
+             <img src="..." alt="...">
+             <div class="carousel-caption">
+             ..
+             </div>
+             .. more wrappers
+           </div>
+           <!-- Controls -->
+           <a class="left carousel-control" href="#example" role="button" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+           </a>
+           .. <a> next ..
+          </div>
+        slide: |
+          Slide carousel
+        carousel-caption: |
+          Add captions to your slides. Within any .item
+          <div class="item">
+            <img src="..." alt="...">
+            <div class="carousel-caption">
+              <h3>...</h3>
+              <p>...</p>
+            </div>
+          </div>
+        carousel-inner: |
+          <!-- Wrapper for slides -->
+           <div class="carousel-inner" role="listbox">
+            <div class="item active">
+             <img src="..." alt="...">
+             <div class="carousel-caption">
+             ..
+             </div>
+             .. more wrappers
+           </div>
+  - class:
+      t: *BUTTONS
+      v:
+        carousel-control: |
+           <a class="left carousel-control" href="#example" role="button" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+           </a>
+        left: .carousel-control
+        right: .carousel-control
+  - class:
+      t: [ul, ol]
+      v:
+        carousel-indicators: |
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example" data-slide-to="1"></li>
+            <li data-target="#carousel-example" data-slide-to="2"></li>
+          </ol>
+  # ensure active for li exists
+  - class:
+      t: li
+      v: active
+  - data-pause:
+      t: div
+      d: Pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave.
+      v:
+        hover: default
+        false:
+  - data-interval:
+      t: div
+      d: The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.
+      v: [5000, 3000, 2000]
+  - data-wrap:
+      t: div
+      d: |
+        Whether the carousel should cycle continuously or have hard stops.
+        Default true.
+      v: [true, false]
+  - data-slide:
+      t: *BUTTONS
+      d: Carousel controll, next, prev.
+      v: [next, prev]
+  - data-slide-to:
+      t: li
+      d: Carousel controll
+      v: [0, 1, 2]
   ########################################
   # Attribute description
   ########################################
