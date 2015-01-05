@@ -3,7 +3,7 @@
 ;; Copyright (C) 2014 Olexandr Sydorchuk
 
 ;; Author: Olexandr Sydorchuk <olexandr.syd@gmail.com>
-;; Version: 0.1.0
+;; Version: 0.9.1
 ;; Keywords: html, auto-complete, rails, ruby
 ;; Package-Requires: ((ac-html "0.3.0"))
 ;; URL: https://github.com/osv/ac-html-bootstrap
