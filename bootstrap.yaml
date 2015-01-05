@@ -1,5 +1,5 @@
 types:
-
+  tooltiptags: &TOOLTIPTAGS global
   buttons: &BUTTONS [button, a, input]
   headers: &H1H6 [h1, h2, h3, h4, h5, h6]
   # GRID SYSTEM
@@ -1283,7 +1283,97 @@ attributes:
           <div role="tabpanel" class="tab-pane fade" id="profile">...</div>
         tab-pane: |
           <div role="tabpanel" class="tab-pane fade in active" id="home">...</div>
-        
+  #tooltip.js
+  - data-toggle:
+      t: *TOOLTIPTAGS
+      v:
+        tooltip: |
+          Tooltip.
+          For performance reasons, the Tooltip and Popover data-apis are opt-in,
+          meaning YOU MUST INITIALIZE THEM YOURSELF.
+          
+          $(function () {
+            $('[data-toggle="tooltip"]').tooltip({placement: 'bottom'})
+          })
+  - data-animation:
+      t: *TOOLTIPTAGS
+      v: [true, false]
+      d: Animation for tooltip/popover.
+  - data-container:
+      t: global
+      d: |
+        Appends the tooltip/popover to a specific element.
+        Example: container: 'body'.
+        Allows you to position the tooltip/popover in the flow of the document near the triggering element.
+        Prevent the tooltip/popover from floating away from the triggering element during a window resize.
+      v: 
+        false:
+        body:
+  - data-delay:
+      t: *TOOLTIPTAGS
+      v:
+        0:
+        1000:
+        "{": &DELAYEXAMPLE Onject: { "show": 500, "hide": 100 }
+        show: *DELAYEXAMPLE
+        hide: *DELAYEXAMPLE
+      d: Delay, Number or Object { "show": 500, "hide": 100 }
+  - data-html:
+      t: *TOOLTIPTAGS
+      d: Insert HTML into the tooltip/popover. If false, jQuery's TEXT method will be used to insert content into the DOM. Use text if you're worried about XSS attacks.
+      v: [true, false]
+  - data-placement:
+      t: *TOOLTIPTAGS
+      d: |
+        How to position the tooltip/popover.
+        When "auto" is specified, it will dynamically reorient the tooltip/popover.
+        "auto left" - left if possible
+      v: [top, bottom, left, right, auto]
+  - data-selector:
+      t: *TOOLTIPTAGS
+      d: |
+        String
+        If a selector is provided, tooltip/popover objects will be delegated to the specified targets.
+        In practice, this is used to enable dynamic HTML content to have tooltips/popover added.
+      v: "false"
+  - data-template:
+      t: *TOOLTIPTAGS
+      d: |
+        For tooltip/popover, base html
+  - data-title:
+      t: *TOOLTIPTAGS
+      d: Default title value if not present "title" attribute
+  - data-trigger:
+      t: *TOOLTIPTAGS
+      d: |
+        How tooltip/popover is triggered - click | hover | focus | manual.
+        You may pass multiple triggers; separate them with a space.
+      v: [click, hover, focus, manual]
+  - data-viewport:
+      t: *TOOLTIPTAGS
+      d: |
+        String or object.
+        Keeps the tooltip/popover within the bounds of this element.
+        Example: viewport: '#viewport' or { "selector": "#viewport", "padding": 0 }
+      v: 
+        selector: Ex. { selector: 'body', padding: 0 }
+  # ..and popover.js
+  - data-toggle:
+      t: *TOOLTIPTAGS
+      v: 
+        popover: |
+          Popover.
+          For performance reasons, the Tooltip and Popover data-apis are opt-in,
+          meaning YOU MUST INITIALIZE THEM YOURSELF.
+
+          $(function () {
+            $('[data-toggle="popover"]').popover({placement: 'bottom'})
+          })
+  - data-content:
+      t: *TOOLTIPTAGS
+      d: Content of popover.
+
+
   ########################################
   # Attribute description
   ########################################
