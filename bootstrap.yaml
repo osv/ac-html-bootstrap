@@ -1372,8 +1372,36 @@ attributes:
   - data-content:
       t: *TOOLTIPTAGS
       d: Content of popover.
-
-
+  # button.js
+  - data-loading-text:
+      t: *BUTTONS
+      d: |
+        A loading state on a button
+        data-loading-text="Loading..."
+  - data-toggle:
+      t: *BUTTONS
+      v: 
+        button: |
+          Single toggle button
+          Pre-toggled buttons need .active and aria-pressed="true"
+          <button type="button" class="btn btn-primary" data-toggle="button"
+                  aria-pressed="false" autocomplete="off">
+            Single toggle
+          </button>
+        buttons: |
+          Togglable Checkbox or radio buttons.
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="checkbox" autocomplete="off" checked> Checkbox 1 (pre-checked)
+            </label>
+            <label class="btn btn-primary">
+              <input type="checkbox" autocomplete="off"> Checkbox 2
+            </label>
+            <label class="btn btn-primary">
+              <input type="checkbox" autocomplete="off"> Checkbox 3
+            </label>
+          </div>
+  - 
   ########################################
   # Attribute description
   ########################################
