@@ -775,7 +775,10 @@ attributes:
       t: *BUTTONS
       v: 
         "#bs-": d
-      d: Link to collected nav links, forms, and other content for toggling
+      d: |
+        1. Link to collected nav links, forms, and other content for toggling
+        2. Activate a modal 
+        <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
 
   - class:
       t: div
@@ -1142,6 +1145,75 @@ attributes:
       v:
         embed-responsive-item: |
           Pro-Tip! You don't need to include frameborder="0" in your <iframe>s as we override that for you.
+
+  ########################################
+  # some js
+  ########################################
+  # modal
+  - class:
+      t: div
+      v: 
+        modal: |
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+           <div class="modal-content">
+            <div class="modal-header">
+            ..
+            <div class="modal-body">
+            ..
+            <div class="modal-footer">
+            
+        fade: Modal animation. Slide it down.
+
+        modal-dialog:
+        modal-content:
+        modal-header: Top section of the modal w/ title and dismiss
+        modal-body: Where all modal content resides (sibling of .modal-header and .modal-footer)
+        modal-footer: |
+          Footer (for actions)
+          <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+  - class:
+      t: *H1H6
+      v:
+        modal-title:
+  - data-toggle:
+      t: *BUTTONS
+      v:
+        modal: |
+          Activate a modal without writing JavaScript. Set data-toggle="modal" on a controller element, like a button, along with a data-target="#foo" or href="#foo" to target a specific modal to toggle.
+
+          <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+  - data-target:
+      t: *BUTTONS
+      v:
+        "#myModal": Activate modal, example.
+  - data-backdrop:
+      t: div
+      d: |
+        Includes a modal-backdrop element.
+        Default true
+        Alternatively, specify static for a backdrop which doesn't close the modal on click.
+        <div id="myModal" class="modal fade" role="dialog" data-backdrop="true">
+      v: [true, false, static]
+  - data-keyboard: 
+      d: Closes the modal when escape key is pressed. Default true
+      t: div
+      v: [true, false]
+  - data-show:
+      d: Shows the modal when initialized. Default true
+      t: div
+      v: [true, false]
+  - data-dismiss:
+      t: *BUTTONS
+      v:
+        modal: |
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+
+
   ########################################
   # Attribute description
   ########################################
