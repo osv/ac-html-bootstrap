@@ -836,7 +836,22 @@ attributes:
       t: [ul, ol]
       v:
         nav:
-        nav-tabs:
+        nav-tabs: |
+          Example with data-toggle
+          <div role="tabpanel">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+           <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+           <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+           <div role="tabpanel" class="tab-pane active" id="home">...</div>
+           <div role="tabpanel" class="tab-pane" id="profile">...</div>
+          </div>
+
+          </div>
         nav-pills:
         nav-stacked: |
           Vertically stackable pills
@@ -1163,8 +1178,10 @@ attributes:
             ..
             <div class="modal-footer">
             
-        fade: Modal animation. Slide it down.
-
+        fade: |
+          1. Modal animation. Slide it down.
+          2. Fade effect for .tab-pane
+        in: .fade .in animation for modal, (first .tab-pane .fade), etc
         modal-dialog:
         modal-content:
         modal-header: Top section of the modal w/ title and dismiss
@@ -1213,7 +1230,60 @@ attributes:
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span></button>
 
-
+  # scrollspy
+  - data-spy:
+      d: |
+        Automatically updating nav targets based on scroll position.
+        CSS
+          body { position: relative; }
+        HTML
+          <body data-spy="scroll" data-target=".navbar-example">
+          ..
+           <div class="navbar-example">
+            <ul class="nav nav-tabs" role="tablist">
+            ..
+            </ul>
+           </div>
+          ..
+          </body>
+      t: global
+      v: scroll
+  - data-offset:
+      d: Pixels to offset from top when calculating position of scroll.
+      t: global
+      v: 
+        10: Default
+        16:
+        20:
+  # tab.js
+  - data-toggle:
+      t: li
+      v:
+        tab: |
+          <ul class="nav nav-tabs">
+           <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+          ..
+          <div class="tab-content">
+            <div class="tab-pane active" id="home">...</div>
+        pill: |
+          <ul class="nav nav-pills">
+           <li class="active"><a href="#tab_a" data-toggle="pill">Pill A</a></li>
+           <li><a href="#tab_b" data-toggle="pill">Pill B</a></li>
+           <li><a href="#tab_c" data-toggle="pill">Pill C</a></li>
+           <li><a href="#tab_d" data-toggle="pill">Pill D</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab_a">...</div>
+  - class:
+      t: div
+      v: 
+        tab-content: |
+          <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active" id="home">...</div>
+          <div role="tabpanel" class="tab-pane fade" id="profile">...</div>
+        tab-pane: |
+          <div role="tabpanel" class="tab-pane fade in active" id="home">...</div>
+        
   ########################################
   # Attribute description
   ########################################
