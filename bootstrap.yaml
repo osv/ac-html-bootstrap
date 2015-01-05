@@ -1143,6 +1143,10 @@ attributes:
         panel-footer: |
           Wrap buttons or secondary text in .panel-footer.
           Note that panel footers do not inherit colors and borders when using contextual variations as they are not meant to be in the foreground.
+        panel-group: |
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+           <div class="panel panel-default">
+             <div class="panel-heading" role="tab" id="headingOne">
   - class:
       t: *H1H6
       v:
@@ -1181,7 +1185,9 @@ attributes:
         fade: |
           1. Modal animation. Slide it down.
           2. Fade effect for .tab-pane
-        in: .fade .in animation for modal, (first .tab-pane .fade), etc
+        in: |
+          1. .fade .in animation for modal, (first .tab-pane .fade), etc
+          2. .panel-collapse .collapse .in - default open panel
         modal-dialog:
         modal-content:
         modal-header: Top section of the modal w/ title and dismiss
@@ -1399,9 +1405,17 @@ attributes:
             </label>
             <label class="btn btn-primary">
               <input type="checkbox" autocomplete="off"> Checkbox 3
-            </label>
+           </label>
           </div>
-  - 
+  - class:
+      t: div
+      v:
+        collapse: |
+          Ex. opened collapsable panel.
+          .panel-collapse .collapse .in
+        panel-collapse: |
+          Be sure to add the class collapse to the collapsible element. If you'd like it to default open, add the additional class in.
+  
   ########################################
   # Attribute description
   ########################################
