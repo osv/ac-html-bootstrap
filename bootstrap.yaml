@@ -450,7 +450,7 @@ types:
 attributes:
 
   - class:
-      t: [div, label]
+      t: global
       v: *GRID
   - class:
       t: div
@@ -708,7 +708,7 @@ attributes:
         text-hide: "Replace an element's text content with a background image."
 
   - class:
-      t: span
+      t: i
       v: *GLYPHICONS
 
   # dropdowns and button group
