@@ -1,10 +1,10 @@
-;;; ac-html-bootstrap.el --- auto complete source for html tags and attributes
+;;; ac-html-bootstrap.el --- auto complete bootstrap3 classes, tags and attributes
 
 ;; Copyright (C) 2014 Olexandr Sydorchuk
 
 ;; Author: Olexandr Sydorchuk <olexandr.syd@gmail.com>
-;; Version: 0.9.1
-;; Keywords: html, auto-complete, rails, ruby
+;; Version: 0.9.2
+;; Keywords: html, auto-complete, bootstrap, cssx
 ;; Package-Requires: ((ac-html "0.3.0"))
 ;; URL: https://github.com/osv/ac-html-bootstrap
 
@@ -23,6 +23,18 @@
 
 ;;; Commentary:
 
+;;   If  you ok  that  "glyphicon"  classes allowed  only  for <i>  or
+;; "label-default" for  <span>, <label>  and so on  this may  good for
+;; you.   Alternative you  can use  package `ac-html-csswatcher'  that
+;; parse   all  css   in   prject.   However   this  package   provide
+;; documentation  with samples  and additional  data- attributes  that
+;; `ac-html-csswatcher'  can't provide,  so  ac-html-bootstrap may  be
+;; helpful for you.
+;;
+;; Contribute:
+;;
+;; All definition are in bootstrap.yaml
+;; Build script here: https://github.com/osv/h5doc.git
 
 ;;; Code:
 
