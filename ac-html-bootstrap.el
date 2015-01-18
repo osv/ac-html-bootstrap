@@ -31,6 +31,10 @@
 ;; `ac-html-csswatcher'  can't provide,  so  ac-html-bootstrap may  be
 ;; helpful for you.
 ;;
+;; Usage:
+;;
+;; Use `ac-html-bootstrap+'
+;;
 ;; Contribute:
 ;;
 ;; All definition are in bootstrap.yaml
@@ -53,3 +57,4 @@
     (setq ac-html-source-dirs (cons (cons "Bootstrap" 'ac-html-bootstrap-source-dir) ac-html-source-dirs))))
 
 (provide 'ac-html-bootstrap)
+;;; ac-html-bootstrap.el ends here
