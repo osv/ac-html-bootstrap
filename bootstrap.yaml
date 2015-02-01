@@ -1497,8 +1497,10 @@ attributes:
              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
              <span class="sr-only">Previous</span>
            </a>
-        left: .carousel-control
-        right: .carousel-control
+        left: &LEFTRIGHTCARUSEL |
+          See .carousel-control
+           <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        right: *LEFTRIGHTCARUSEL
   - class:
       t: [ul, ol]
       v:
