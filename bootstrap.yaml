@@ -587,13 +587,16 @@ attributes:
            </div>
 
   - class:
-      t: [div, label]
+      t: div
       v:
         disabled: |
           To have the <label> for the checkbox or radio also display a "not-allowed" cursor when the user hovers over the label, add the .disabled class to your:
           .radio, .radio-inline, .checkbox, .checkbox-inline, or <fieldset>.
 
           For <a>  Opera <18, IE11 use JS to disable such link.
+  - class:
+      t: [div, label]
+      v:
         radio:
         radio-inline:
         checkbox:
