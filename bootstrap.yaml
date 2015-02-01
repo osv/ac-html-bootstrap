@@ -1,6 +1,7 @@
 types:
   tooltiptags: &TOOLTIPTAGS global
-  buttons: &BUTTONS [button, a, input]
+  # label - because of "<input radio"
+  buttons: &BUTTONS [button, a, input, label]
   headers: &H1H6 [h1, h2, h3, h4, h5, h6]
   # GRID SYSTEM
   grid: &GRID
