@@ -15,9 +15,9 @@ carousel-control <a class="left carousel-control" href="#example" role="button" 
 close Generic close icon for dismissing content like modals and alerts.
 disabled Disabled state.\n\nFor <a>  Opera <18, IE11 use JS to disable such link.\n
 dropdown-toggle
-left .carousel-control
+left See .carousel-control\n <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">\n
 navbar-brand Replace the navbar brand with your own image by swapping the text for an <img>.\nSince the .navbar-brand has its own padding and height, you may need to override some CSS depending on your image.\n<div class="navbar-header">\n <a class="navbar-brand"..\n
 navbar-btn Add the .navbar-btn class to <button> elements not residing in a <form> to vertically center them in the navbar
 navbar-left These classes are mixin-ed version of .pull-left
 navbar-right These classes are mixin-ed version of .pull-right
-right .carousel-control
+right See .carousel-control\n <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">\n

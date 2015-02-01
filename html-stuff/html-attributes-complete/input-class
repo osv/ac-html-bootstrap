@@ -17,6 +17,6 @@ dropdown-toggle
 form-control Set to width: 100%; by default. Wrap labels and controls in .form-group for optimum spacing.
 input-lg modifier classes to decrease or increase the height and font-size of form controls
 input-sm modifier classes to decrease or increase the height and font-size of form controls
-left .carousel-control
+left See .carousel-control\n <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">\n
 navbar-btn Add the .navbar-btn class to <button> elements not residing in a <form> to vertically center them in the navbar
-right .carousel-control
+right See .carousel-control\n <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">\n
