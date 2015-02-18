@@ -1095,7 +1095,7 @@ attributes:
   - class:
       t: [ul, ol, div]
       v:
-        list-group: |
+        list-group: &LISTGROUPEXAMPLE |
           <div class="list-group">
            <a href="#" class="list-group-item active">
             <h4 class="list-group-item-heading">List group item heading</h4>
@@ -1106,20 +1106,20 @@ attributes:
           or
 
           <ul class="list-group">
-            <li class="list-group-item...
+            <li class="list-group-item"...
   - class:
       t: [li, a]
       v:
-        list-group-item:
+        list-group-item: *LISTGROUPEXAMPLE
         active:
   - class:
       t: *H1H6
       v:
-        list-group-item-heading:
+        list-group-item-heading: *LISTGROUPEXAMPLE
   - class:
       t: p
       v:
-        list-group-item-text:
+        list-group-item-text: *LISTGROUPEXAMPLE
 
   # panel
   - class:
