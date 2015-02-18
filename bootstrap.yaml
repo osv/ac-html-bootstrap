@@ -1169,6 +1169,12 @@ attributes:
         embed-responsive-item: |
           Pro-Tip! You don't need to include frameborder="0" in your <iframe>s as we override that for you.
 
+  - class:
+      t: div
+      v:
+        well: Use the well as a simple effect on an element to give it an inset effect.
+        well-lg:
+        well-sm:
   ########################################
   # some js
   ########################################
