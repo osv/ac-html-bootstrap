@@ -3,7 +3,7 @@ carousel-indicators <ol class="carousel-indicators">\n  <li data-target="#carous
 dropdown-menu <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">\n <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Regular link</a></li>\n <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>\n <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another link</a></li>\n</ul>\n
 dropdown-menu-left
 dropdown-menu-right
-list-group <div class="list-group">\n <a href="#" class="list-group-item active">\n  <h4 class="list-group-item-heading">List group item heading</h4>\n  <p class="list-group-item-text">...</p>\n </a>\n</div>\n\nor\n\n<ul class="list-group">\n  <li class="list-group-item...\n
+list-group <div class="list-group">\n <a href="#" class="list-group-item active">\n  <h4 class="list-group-item-heading">List group item heading</h4>\n  <p class="list-group-item-text">...</p>\n </a>\n</div>\n\nor\n\n<ul class="list-group">\n  <li class="list-group-item"...\n
 list-inline Place all list items on a single line with display: inline-block; and some light padding.
 list-unstyled Remove the default list-style and left margin on list items (immediate children only).\nThis only applies to immediate children list items, meaning you will need to add the class for any nested lists as well.\n
 nav

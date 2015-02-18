@@ -11,7 +11,7 @@ bg-primary Contextual backgrounds
 bg-success Contextual backgrounds
 bg-warning Contextual backgrounds
 caption caption of thumb
-caret
+caret Use carets to indicate dropdown functionality and direction
 center-block Center content blocks
 hidden Force an element to be hidden including for screen readers
 icon-bar May be used in ".navbar-toggle .collapsed" as collapse toggle button\n<span class="icon-bar"></span>\n<span class="icon-bar"></span>\n<span class="icon-bar"></span>      \n

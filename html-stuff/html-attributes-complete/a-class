@@ -25,7 +25,7 @@ disabled Disabled state.\n\nFor <a>  Opera <18, IE11 use JS to disable such link
 dropdown-toggle
 hidden Force an element to be hidden including for screen readers
 left See .carousel-control\n <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">\n
-list-group-item
+list-group-item <div class="list-group">\n <a href="#" class="list-group-item active">\n  <h4 class="list-group-item-heading">List group item heading</h4>\n  <p class="list-group-item-text">...</p>\n </a>\n</div>\n\nor\n\n<ul class="list-group">\n  <li class="list-group-item"...\n
 media-bottom
 media-left
 media-middle

@@ -10,7 +10,7 @@ input-group Place one add-on or button on either side of an input\n <div class="
 input-group-btn Segmented buttons\n <div class="input-group">\n  <div class="input-group-btn">\n     Button and dropdown menu here\n  </div>\n  <input type="text" class="form-control">\n</div>\n
 input-group-lg
 input-group-sm
-list-group-item-text
+list-group-item-text <div class="list-group">\n <a href="#" class="list-group-item active">\n  <h4 class="list-group-item-heading">List group item heading</h4>\n  <p class="list-group-item-text">...</p>\n </a>\n</div>\n\nor\n\n<ul class="list-group">\n  <li class="list-group-item"...\n
 navbar-text Text inside navbad
 pull-left Float an element to the left with a class
 pull-right Float an element to the right with a class

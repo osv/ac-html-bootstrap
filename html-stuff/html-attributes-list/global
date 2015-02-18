@@ -10,5 +10,5 @@ data-trigger How tooltip/popover is triggered - click | hover | focus | manual.\
 data-placement How to position the tooltip/popover.\nWhen "auto" is specified, it will dynamically reorient the tooltip/popover.\n"auto left" - left if possible\n
 data-target For scrollspy.\n<body data-spy="scroll" data-target=".navbar-example">\n..\n  <div class="navbar-example">\n   <ul class="nav nav-tabs" role="tablist">\n..\n   </ul>\n  </div>\n..\n</body>\n
 data-spy
-data-delay Delay, Number or Object { "show": 500, "hide": 100 }
+data-delay Delay, Number or Object '{ "show": 500, "hide": 100 }'\nNote, use data-delay='{"..' \n  not data-delay="{.."\n
 data-content Content of popover.

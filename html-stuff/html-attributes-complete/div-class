@@ -31,7 +31,7 @@ container-fluid Create the fluid layouts in order to utilize the 100% width of t
 disabled To have the <label> for the checkbox or radio also display a "not-allowed" cursor when the user hovers over the label, add the .disabled class to your:\n.radio, .radio-inline, .checkbox, .checkbox-inline, or <fieldset>.\n\nFor <a>  Opera <18, IE11 use JS to disable such link.\n
 dropdown <div class="dropdown">\n    <button class="btn btn-default dropdown-toggle"\n    data-toggle="dropdown" aria-expanded="true" id="drMenu1">\n      Dropdown\n        <span class="caret"></span>\n    </button>\n    <ul class="dropdown-menu" role="menu" aria-labelledby="drMenu1">\n      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>\n      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>\n    </ul>\n</div>\n
 dropup <div class="btn-group dropup">
-embed-responsive
+embed-responsive Allow browsers to determine video or slideshow dimensions based on the width of their containing block by creating an intrinsic ratio that will properly scale on any device.\n
 embed-responsive-16by9
 embed-responsive-4by3
 fade 1. Modal animation. Slide it down.\n2. Fade effect for .tab-pane\n
@@ -50,7 +50,7 @@ input-group-btn Segmented buttons\n <div class="input-group">\n  <div class="inp
 input-group-lg
 input-group-sm
 jumbotron A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.\nTo make the jumbotron full width, and without rounded corners,\nplace it outside all .containers and instead add a .container within\n
-list-group <div class="list-group">\n <a href="#" class="list-group-item active">\n  <h4 class="list-group-item-heading">List group item heading</h4>\n  <p class="list-group-item-text">...</p>\n </a>\n</div>\n\nor\n\n<ul class="list-group">\n  <li class="list-group-item...\n
+list-group <div class="list-group">\n <a href="#" class="list-group-item active">\n  <h4 class="list-group-item-heading">List group item heading</h4>\n  <p class="list-group-item-text">...</p>\n </a>\n</div>\n\nor\n\n<ul class="list-group">\n  <li class="list-group-item"...\n
 media Abstract object styles for building various types of components.\n(like blog comments, Tweets, etc)\nthat feature a left- or right-aligned image alongside textual content.\n
 media-body
 media-bottom
@@ -110,3 +110,6 @@ text-primary Contextual colors\nConvey meaning through color with a handful of e
 text-success Contextual colors\nConvey meaning through color with a handful of emphasis utility classes.\nThese may also be applied to links and will darken on hover just like our default link styles.\n
 text-warning Contextual colors\nConvey meaning through color with a handful of emphasis utility classes.\nThese may also be applied to links and will darken on hover just like our default link styles.\n
 thumbnail
+well Use the well as a simple effect on an element to give it an inset effect.
+well-lg
+well-sm
