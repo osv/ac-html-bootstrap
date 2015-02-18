@@ -1344,10 +1344,14 @@ attributes:
       v:
         0:
         1000:
-        "{": &DELAYEXAMPLE Onject: { "show": 500, "hide": 100 }
+        "{": &DELAYEXAMPLE Onject: '{ "show": 500, "hide": 100 }'
         show: *DELAYEXAMPLE
         hide: *DELAYEXAMPLE
-      d: Delay, Number or Object { "show": 500, "hide": 100 }
+      d: |
+        Delay, Number or Object '{ "show": 500, "hide": 100 }'
+        Note, use data-delay='{"..' 
+          not data-delay="{.."
+      
   - data-html:
       t: *TOOLTIPTAGS
       d: Insert HTML into the tooltip/popover. If false, jQuery's TEXT method will be used to insert content into the DOM. Use text if you're worried about XSS attacks.
