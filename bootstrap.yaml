@@ -719,7 +719,7 @@ attributes:
   - class:
       t: span
       v: 
-        caret:
+        caret: Use carets to indicate dropdown functionality and direction
         icon-bar: |
           May be used in ".navbar-toggle .collapsed" as collapse toggle button
           <span class="icon-bar"></span>
