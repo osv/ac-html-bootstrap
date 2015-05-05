@@ -42,6 +42,8 @@
 ;; Use `ac-html-bootstrap+' or `company-web-bootstrap+'
 ;; and if you want Font Awesome: `ac-html-fa+' or `company-web-fa+'
 ;;
+;; Note: Font Awesome completion only available for <i> tag
+;;
 ;; Contribute:
 ;;
 ;; All definition are in bootstrap.yaml
