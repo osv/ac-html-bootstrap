@@ -1,4 +1,4 @@
-;;; ac-html-bootstrap.el --- auto complete bootstrap3 classes, tags and attributes
+;;; ac-html-bootstrap.el --- auto complete bootstrap3 classes for `ac-html' and `company-web'
 
 ;; Copyright (C) 2014 Olexandr Sydorchuk
 
@@ -26,14 +26,18 @@
 ;;   If  you ok  that  "glyphicon"  classes allowed  only  for <i>  or
 ;; "label-default" for  <span>, <label> and  so on, this may  good for
 ;; you.   Alternative you  can use  package `ac-html-csswatcher'  that
-;; parse   all  css   in   prject.   However   this  package   provide
-;; documentation  with samples  and additional  data- attributes  that
-;; `ac-html-csswatcher'  can't provide,  so  ac-html-bootstrap may  be
-;; helpful for you.
+;; parse all css in prject.
+
+;;   However  this  package  provide documentation  with  samples  and
+;; additional   data-  attributes   that  `ac-html-csswatcher'   can't
+;; provide, so ac-html-bootstrap may be helpful for you.
+;;
+;; Install `ac-html' for `auto-complete' completion framework
+;; or `company-web' if you are using `company' framework.
 ;;
 ;; Usage:
 ;;
-;; Use `ac-html-bootstrap+'
+;; Use `ac-html-bootstrap+' or `company-web-bootstrap+'
 ;;
 ;; Contribute:
 ;;
@@ -55,6 +59,9 @@
   (make-local-variable 'ac-html-source-dirs)
   (unless (assoc "Bootstrap" ac-html-source-dirs)
     (setq ac-html-source-dirs (cons (cons "Bootstrap" 'ac-html-bootstrap-source-dir) ac-html-source-dirs))))
+
+;;;###autoload
+(defalias 'company-web-bootstrap+ 'ac-html-bootstrap+)
 
 (provide 'ac-html-bootstrap)
 ;;; ac-html-bootstrap.el ends here
