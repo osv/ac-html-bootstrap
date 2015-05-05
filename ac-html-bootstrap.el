@@ -5,7 +5,7 @@
 ;; Author: Olexandr Sydorchuk <olexandr.syd@gmail.com>
 ;; Version: 0.9.2
 ;; Keywords: html, auto-complete, bootstrap, cssx
-;; Package-Requires: ((ac-html "0.3.0"))
+;; Package-Requires: ((web-completion-data "0.1"))
 ;; URL: https://github.com/osv/ac-html-bootstrap
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -46,7 +46,7 @@
 
 ;;; Code:
 
-(require 'ac-html)
+(require 'web-completion-data)
 
 (defconst ac-html-bootstrap-source-dir
   (expand-file-name "html-stuff" (file-name-directory load-file-name))
@@ -56,9 +56,9 @@
 (defun ac-html-bootstrap+ ()
   "Enable bootstrap ac-html completion"
   (interactive)
-  (make-local-variable 'ac-html-source-dirs)
-  (unless (assoc "Bootstrap" ac-html-source-dirs)
-    (setq ac-html-source-dirs (cons (cons "Bootstrap" 'ac-html-bootstrap-source-dir) ac-html-source-dirs))))
+  (make-local-variable 'web-completion-data-sources)
+  (unless (assoc "Bootstrap" web-completion-data-sources)
+    (setq web-completion-data-sources (cons (cons "Bootstrap" 'ac-html-bootstrap-source-dir) web-completion-data-sources))))
 
 ;;;###autoload
 (defalias 'company-web-bootstrap+ 'ac-html-bootstrap+)
