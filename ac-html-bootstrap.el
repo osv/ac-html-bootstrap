@@ -1,4 +1,4 @@
-;;; ac-html-bootstrap.el --- auto complete bootstrap3 classes for `ac-html' and `company-web'
+;;; ac-html-bootstrap.el --- auto complete bootstrap3/fontawesome classes for `ac-html' and `company-web'
 
 ;; Copyright (C) 2014 Olexandr Sydorchuk
 
@@ -23,6 +23,8 @@
 
 ;;; Commentary:
 
+;; Bootstrap and Font Awesome
+;;
 ;;   If  you ok  that  "glyphicon"  classes allowed  only  for <i>  or
 ;; "label-default" for  <span>, <label> and  so on, this may  good for
 ;; you.   Alternative you  can use  package `ac-html-csswatcher'  that
@@ -38,6 +40,7 @@
 ;; Usage:
 ;;
 ;; Use `ac-html-bootstrap+' or `company-web-bootstrap+'
+;; and if you want Font Awesome: `ac-html-fa+' or `company-web-fa+'
 ;;
 ;; Contribute:
 ;;
