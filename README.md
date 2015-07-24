@@ -4,8 +4,8 @@ bootstrap3/fontawesome completion data for EMACS `ac-html` and `company-web` mod
 
 ## DESCRIPTION ##
 
-If  you  ok   that  `glyphicon`  classes  allowed  only   for  <i>  or
-`label-default` for` <span>`, `<label>` and so  on, this package may be good for you.
+If  you  ok   that  `glyphicon`  classes  allowed  only   for  `<i>`  or
+`label-default` for `<span>`, `<label>` and so  on, this package may be good for you.
 Alternative you  can use  package [ac-html-csswatcher](https://github.com/osv/ac-html-csswatcher/) that  parse all
 css in project.
 
