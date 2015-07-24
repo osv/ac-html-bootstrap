@@ -558,6 +558,15 @@ attributes:
               <input type="password" class="form-control" id="pwd" placeholder="Password">
             </div>
   - class:
+      t: [label]
+      v:
+        control-label: |
+          <div class="form-group">
+            <label class="control-label" for="myInput">Input with success</label>
+            <input type="text" class="form-control" id="myInput">
+          </div>
+
+  - class:
       t: span
       v:
         sr-only: |
