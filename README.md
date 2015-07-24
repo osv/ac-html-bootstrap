@@ -19,7 +19,7 @@ Install `ac-html` if you use `auto-complete` completion framework
 or `company-web` if you are using `company` framework.
 
 When you edit your .html(.jade, etc) file exec `M-x ac-html-bootstrap+`
-or `M-x company-web-bootstrap+' to enable twitter bootstrap completion.
+or `M-x company-web-bootstrap+` to enable twitter bootstrap completion.
 If you want Font Awesome: `M-x ac-html-fa+` or `M-x company-web-fa+`
 
 Note: Font Awesome completion only available for <i> tag
