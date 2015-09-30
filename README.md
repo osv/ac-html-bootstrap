@@ -1,8 +1,8 @@
-# ac-html-bootstrap.el #
+# ac-html-bootstrap.el
 
 bootstrap3/fontawesome completion data for EMACS `ac-html` and `company-web` modes.
 
-## DESCRIPTION ##
+## DESCRIPTION
 
 If  you  ok   that  `glyphicon`  classes  allowed  only   for  `<i>`  or
 `label-default` for `<span>`, `<label>` and so  on, this package may be good for you.
@@ -18,13 +18,20 @@ so `ac-html-bootstrap` may be helpful for you.
 Install `ac-html` if you use `auto-complete` completion framework
 or `company-web` if you are using `company` framework.
 
-When you edit your .html(.jade, etc) file exec `M-x ac-html-bootstrap+`
+When you edit your .html(.jade, .haml, .slim) file exec `M-x ac-html-bootstrap+`
 or `M-x company-web-bootstrap+` to enable twitter bootstrap completion.
 If you want Font Awesome: `M-x ac-html-fa+` or `M-x company-web-fa+`
 
 Note: Font Awesome completion only available for <i> tag
 
-## CONTRIBUTE ##
+## ISSUES
+
+Since `ac-html` 0.4 is alpha stage, and not stable yet. This package works with ac-html 0.3 series,
+if you are using ac-html 0.4 series, you may downgrade `ac-html` aka reinstall from melpa-stable.
+
+`ac-html` 0.4 will be supported in the future.
+
+## CONTRIBUTE
 
 All definition are in `bootstrap.yaml`.
 Build script here: https://github.com/osv/h5doc.git
