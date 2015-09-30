@@ -22,7 +22,7 @@ When you edit your .html(.jade, .haml, .slim) file exec `M-x ac-html-bootstrap+`
 or `M-x company-web-bootstrap+` to enable twitter bootstrap completion.
 If you want Font Awesome: `M-x ac-html-fa+` or `M-x company-web-fa+`
 
-Note: Font Awesome completion only available for <i> tag
+Note: Font Awesome completion only available for `<i>` tag
 
 ## ISSUES
 
