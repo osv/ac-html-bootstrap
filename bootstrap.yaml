@@ -503,7 +503,7 @@ attributes:
         list-unstyled: |
           Remove the default list-style and left margin on list items (immediate children only).
           This only applies to immediate children list items, meaning you will need to add the class for any nested lists as well.
-        list-inline: Place all list items on a single line with display: inline-block; and some light padding.
+        list-inline: "Place all list items on a single line with display: inline-block; and some light padding."
   - class:
       t: dl
       v: Make terms and descriptions in <dl> line up side-by-side. Starts off stacked like default <dl>s, but when the navbar expands, so do these.
@@ -544,7 +544,7 @@ attributes:
   - class:
       t: [input, textarea, select]
       v:
-        form-control: Set to width: 100%; by default. Wrap labels and controls in .form-group for optimum spacing.
+        form-control: "Set to width: 100%; by default. Wrap labels and controls in .form-group for optimum spacing."
         input-lg: &FMMOD modifier classes to decrease or increase the height and font-size of form controls
         input-sm: *FMMOD
   - class:
@@ -672,7 +672,7 @@ attributes:
           to the image so that it scales nicely to the parent element.
         img-rounded: Adds border-radius:6px to give the image rounded corners.
         img-circle: Makes the entire image round by adding border-radius:500px.
-        img-thumbnail: Adds a bit of padding and a gray border:
+        img-thumbnail: Adds a bit of padding and a gray border
 
   # helpers
 
@@ -1353,7 +1353,8 @@ attributes:
       v:
         0:
         1000:
-        "{": &DELAYEXAMPLE Onject: '{ "show": 500, "hide": 100 }'
+        "{": &DELAYEXAMPLE |
+          Onject: '{ "show": 500, "hide": 100 }'
         show: *DELAYEXAMPLE
         hide: *DELAYEXAMPLE
       d: |
@@ -1399,7 +1400,8 @@ attributes:
         Keeps the tooltip/popover within the bounds of this element.
         Example: viewport: '#viewport' or { "selector": "#viewport", "padding": 0 }
       v: 
-        selector: Ex. { selector: 'body', padding: 0 }
+        selector: |
+          Ex. { selector: 'body', padding: 0 }
   # ..and popover.js
   - data-toggle:
       t: *TOOLTIPTAGS
