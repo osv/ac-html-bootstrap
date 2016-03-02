@@ -195,7 +195,7 @@ hidden-md Hidden for medium devices (>992px)
 hidden-print Toggling content for print
 hidden-sm Hidden for small devices (>768px)
 hidden-xs Hidden for extra small devices (<768px)
-small For de-emphasizing inline or blocks of text, use the <small> tag to set text at 85% the size of the parent.\nHeading elements receive their own font-size for nested <small> elements.\n
+small For de-emphasizing inline or blocks of text, use the <small> tag to set text at 85% the size of the parent.\nHeading elements receive their own font-size for nested <small> elements.
 sr-only Hides an element to all devices except screen readers
 sr-only-focusable Combine with .sr-only to show the element again when it is focused e.g. by a keyboard-only user
 text-capitalize Capitalized text.
